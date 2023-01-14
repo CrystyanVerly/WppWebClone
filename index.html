@@ -16,6 +16,13 @@
     <link rel="stylesheet" type="text/css" href="./css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
 
+    <!--FiveCon-->
+    <link
+      rel="shortcut icon"
+      href="./img/WhatsApp.svg.webp"
+      type="image/x-icon"
+    />
+
     <!-- Font Awesome-->
     <script
       src="https://kit.fontawesome.com/8eebd5e0b7.js"
@@ -23,5 +30,63 @@
     ></script>
     <title>WhatsApp Web Clone</title>
   </head>
-  <body></body>
+  <body>
+    <aside class="left-bar">
+      <section class="profile-bar">
+        <div class="container-profile-photo">
+          <img
+            src="./img/avatar1.png"
+            class="photo"
+            id="my-photo-profile"
+            alt="profile photo"
+          />
+        </div>
+        <div class="container-tools-icons">
+          <i class="fa-solid fa-spinner"></i>
+          <i class="fa-solid fa-message"></i>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </section>
+      <section class="notification-bar">
+        <i class="fa-solid fa-bell-slash"></i>
+        <p class="notification-receive">
+          Receba notificações de novas mensagens
+        </p>
+        <p class="notification-activate">
+          Ativar notificações na área de trabalho
+          <i class="fa-solid fa-angle-right"></i>
+        </p>
+      </section>
+      <section class="search-chat-bar">
+        <div class="container-search-chat">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            placeholder="Pesquisar ou começar uma nova conversa."
+          />
+          <i class="fa-solid fa-filter"></i>
+        </div>
+      </section>
+      <section class="section-chat">
+        <div class="chat1">
+          <div class="container-profile-photo">
+            <img
+              src="./img/avatar2.png"
+              class="photo"
+              alt="photo profile someone"
+            />
+          </div>
+          <div class="container-user-info">
+            <div class="container-name-time">
+              <p class="user-name">Natália Cruz</p>
+              <p class="time-chat">22:40</p>
+            </div>
+            <p class="prev-message">
+              <i class="fa-solid fa-check-double"></i> Oi, tudo bem?
+            </p>
+          </div>
+        </div>
+      </section>
+    </aside>
+  </body>
 </html>
