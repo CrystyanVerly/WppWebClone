@@ -83,6 +83,7 @@ body {
   text-align: center;
   font-size: 13px;
   cursor: pointer;
+  padding: 0.5rem;
 }
 .left-bar .container-search-chat input {
   padding: 0 32px 0 30px;
