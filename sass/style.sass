@@ -1,0 +1,70 @@
+// general
+
+*
+  box-sizing: border-box
+
+body
+  display: flex
+  background-color: #e3e1dd
+
+#background-green-bar
+  height: 8rem
+  width: 100%
+  background-color: #00a884
+  position: relative
+  padding: 0
+
+#container-hug-back
+  display: flex
+  position: absolute
+  padding: 1.2rem
+  width: 100%
+  height: 100vh
+  box-shadow: 0 6px 18px rgba(var(--shadow-rgb),.05)
+
+.photo
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  background-color: #ddd
+  cursor: pointer
+
+// left section
+
+.left-bar
+  display: flex
+  flex-direction: column
+  background-color: #fff
+  width: 30%
+  border-right: 1px solid #ebeef1
+
+  .profile-bar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: #f0f2f5
+    padding: 10px 16px
+    height: 3.8rem
+
+  .container-tools-icons
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 140px
+    i
+      cursor: pointer
+      font-size: 1.2rem
+      text-align: center
+      width: 40px
+      height: 40px
+      padding: 8px
+      color: #546570
+
+main
+  img
+    display: none
+    height: 100%
+
+.right-content
+  width: 70%
+  background-color: #efeae2
