@@ -48,7 +48,10 @@ body
 .fa-volume-xmark
   color: #8696a1
   margin-right: 6px
-  padding-top: 2px
+  padding-top: 3px
+
+.read
+  color: #6ac6ee
 
 // left section
 
@@ -129,6 +132,7 @@ body
     display: flex
     flex-direction: column
     height: 100%
+    overflow-y: scroll
 
     .chat-container
       display: flex
@@ -136,6 +140,10 @@ body
       text-align: center
       padding: 10px 16px
       border-bottom: 1px solid #f1f4f5
+      cursor: pointer
+      transition: .1s
+      &:hover
+        background-color: #f5f6f6
 
       .container-user-info
         width: 100%
