@@ -47,6 +47,8 @@ body
 
 .fa-volume-xmark
   color: #8696a1
+  margin-right: 6px
+  padding-top: 2px
 
 // left section
 
@@ -130,15 +132,53 @@ body
 
     .chat-container
       display: flex
+      align-items: center
+      text-align: center
       padding: 10px 16px
+      border-bottom: 1px solid #f1f4f5
+
       .container-user-info
         width: 100%
+
         .container-name-time
           display: flex
           justify-content: space-between
+
+          .user-name
+            font-size: 15px
+            color: #111b21
+
+          .time-chat
+            font-size: 12px
+            color: #667781
+
         .msg-content
           display: flex
           justify-content: space-between
+          margin-top: 3px
+
+          .prev-message
+            line-height: 20px
+            font-size: 13px
+            color: #3b4a54
+            padding-top: 3px
+
+          .msg-icon
+            display: flex
+
+            .pending-msg
+              display: flex
+              justify-content: center
+              align-items: center
+              width: 20.5px
+              height: 20.5px
+              border-radius: 50%
+              background-color: #26d366
+              .pending-msg-amount
+                text-align: center
+                color: #fbfefc
+                font-size: 13px
+
 main
   img
     display: none

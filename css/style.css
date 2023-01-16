@@ -54,6 +54,8 @@ body {
 
 .fa-volume-xmark {
   color: #8696a1;
+  margin-right: 6px;
+  padding-top: 2px;
 }
 
 .left-bar {
@@ -135,7 +137,10 @@ body {
 }
 .left-bar .section-chat .chat-container {
   display: flex;
+  align-items: center;
+  text-align: center;
   padding: 10px 16px;
+  border-bottom: 1px solid #f1f4f5;
 }
 .left-bar .section-chat .chat-container .container-user-info {
   width: 100%;
@@ -144,9 +149,41 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.left-bar .section-chat .chat-container .container-user-info .container-name-time .user-name {
+  font-size: 15px;
+  color: #111b21;
+}
+.left-bar .section-chat .chat-container .container-user-info .container-name-time .time-chat {
+  font-size: 12px;
+  color: #667781;
+}
 .left-bar .section-chat .chat-container .container-user-info .msg-content {
   display: flex;
   justify-content: space-between;
+  margin-top: 3px;
+}
+.left-bar .section-chat .chat-container .container-user-info .msg-content .prev-message {
+  line-height: 20px;
+  font-size: 13px;
+  color: #3b4a54;
+  padding-top: 3px;
+}
+.left-bar .section-chat .chat-container .container-user-info .msg-content .msg-icon {
+  display: flex;
+}
+.left-bar .section-chat .chat-container .container-user-info .msg-content .msg-icon .pending-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20.5px;
+  height: 20.5px;
+  border-radius: 50%;
+  background-color: #26d366;
+}
+.left-bar .section-chat .chat-container .container-user-info .msg-content .msg-icon .pending-msg .pending-msg-amount {
+  text-align: center;
+  color: #fbfefc;
+  font-size: 13px;
 }
 
 main img {
