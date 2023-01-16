@@ -3,9 +3,13 @@
 *
   box-sizing: border-box
 
+html
+  font-family: "Open Sans", sans-serif
+
 body
   display: flex
-  background-color: #e3e1dd
+  height: 100vh
+  background: linear-gradient(180deg,#eae6df, #d1d7db)
 
 #background-green-bar
   height: 8rem
@@ -20,7 +24,7 @@ body
   padding: 1.2rem
   width: 100%
   height: 100vh
-  box-shadow: 0 6px 18px rgba(11,20,26,.05)
+  border-radius: 3px
 
 .photo
   width: 40px
@@ -28,6 +32,21 @@ body
   border-radius: 50%
   background-color: #ddd
   cursor: pointer
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px
+
+.photo-profile-chat
+  width: 49px
+  height: 49px
+
+.container-profile-photo-chat
+  padding-right: 13px
+
+.pinned-chat
+  width: 20px
+  height: 20px
+
+.fa-volume-xmark
+  color: #8696a1
 
 // left section
 
@@ -36,8 +55,9 @@ body
   flex-direction: column
   background-color: #fff
   width: 30%
-  border-right: 1px solid #ebeef1
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px
 
+  // PROFILE SESSION
   .profile-bar
     display: flex
     justify-content: space-between
@@ -51,6 +71,7 @@ body
     align-items: center
     justify-content: space-between
     width: 140px
+
     i
       cursor: pointer
       font-size: 1.2rem
@@ -59,6 +80,8 @@ body
       height: 40px
       padding: 8px
       color: #546570
+
+  // SEARCHING SESSION
   .search-chat-bar
     display: flex
     align-items: center
@@ -93,11 +116,29 @@ body
         outline: 0
       &:input::placeholder
         color: #969a9c
+
   .fa-filter
     color: #a4b0b7
     margin: 0 auto
     cursor: pointer
 
+  // CHAT SESSION
+  .section-chat
+    display: flex
+    flex-direction: column
+    height: 100%
+
+    .chat-container
+      display: flex
+      padding: 10px 16px
+      .container-user-info
+        width: 100%
+        .container-name-time
+          display: flex
+          justify-content: space-between
+        .msg-content
+          display: flex
+          justify-content: space-between
 main
   img
     display: none
@@ -106,3 +147,4 @@ main
 .right-content
   width: 70%
   background-color: #efeae2
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px
