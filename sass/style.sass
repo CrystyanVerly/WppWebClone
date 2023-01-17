@@ -30,7 +30,7 @@ body
   width: 40px
   height: 40px
   border-radius: 50%
-  background-color: #ddd
+  background-color: #bdd7cf
   cursor: pointer
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px
 
@@ -46,9 +46,14 @@ body
   height: 20px
 
 .fa-volume-xmark
-  color: #8696a1
   margin-right: 6px
   padding-top: 3px
+
+.fa-camera, .fa-video, .fa-volume-xmark
+  color: #8696a1
+
+.fa-phone-slash
+  color: #ea0038
 
 .read
   color: #6ac6ee
@@ -126,6 +131,17 @@ body
     color: #a4b0b7
     margin: 0 auto
     cursor: pointer
+
+  // CHAT SCROLL BAR
+  ::-webkit-scrollbar-track
+    background-color: #fff
+
+  ::-webkit-scrollbar
+    width: 6px
+    background: #F4F4F4
+
+  ::-webkit-scrollbar-thumb
+    background: #ced0d1
 
   // CHAT SESSION
   .section-chat
