@@ -57,7 +57,15 @@ body {
   padding-top: 3px;
 }
 
-.fa-camera, .fa-video, .fa-volume-xmark {
+.fa-angle-down {
+  display: none;
+  margin: 5px 0 0 5px;
+}
+
+.fa-camera,
+.fa-video,
+.fa-volume-xmark,
+.fa-angle-down {
   color: #8696a1;
 }
 
@@ -168,6 +176,9 @@ body {
 }
 .left-bar .section-chat .chat-container:hover {
   background-color: #f5f6f6;
+}
+.left-bar .section-chat .chat-container:hover .fa-angle-down {
+  display: inherit;
 }
 .left-bar .section-chat .chat-container .container-user-info {
   width: 100%;

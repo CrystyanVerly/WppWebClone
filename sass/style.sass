@@ -49,7 +49,14 @@ body
   margin-right: 6px
   padding-top: 3px
 
-.fa-camera, .fa-video, .fa-volume-xmark
+.fa-angle-down
+  display: none
+  margin: 5px 0 0 5px
+
+.fa-camera,
+.fa-video,
+.fa-volume-xmark,
+.fa-angle-down
   color: #8696a1
 
 .fa-phone-slash
@@ -158,8 +165,11 @@ body
       border-bottom: 1px solid #f1f4f5
       cursor: pointer
       transition: .1s
+
       &:hover
         background-color: #f5f6f6
+        .fa-angle-down
+          display: inherit
 
       .container-user-info
         width: 100%
