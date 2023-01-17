@@ -81,7 +81,7 @@ body
     align-items: center
     background-color: #f0f2f5
     padding: 10px 16px
-    height: 3.8rem
+    height: 60px
 
   .container-tools-icons
     display: flex
@@ -208,17 +208,113 @@ body
               height: 20.5px
               border-radius: 50%
               background-color: #26d366
+
               .pending-msg-amount
                 text-align: center
                 color: #fbfefc
                 font-size: 13px
 
-main
-  img
-    display: none
-    height: 100%
+// MAIN SESSION
 
 .right-content
   width: 70%
   background-color: #efeae2
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px
+
+  // BAR USER SELECTED
+  .selected-chat-bar
+    display: flex
+    align-items: center
+    background-color: #f0f2f5
+    padding: 10px 16px
+    height: 3.8rem
+    border-left: 1px solid #d1d7db
+    height: 60px
+
+    #main-chat-photo-profile
+      width: 40px
+      height: 40px
+
+    .container-user-info
+      width: 100%
+      cursor: pointer
+
+    .container-name-status-icons
+      display: flex
+      width: 100%
+      justify-content: space-between
+      align-items: center
+
+      .name-and-status
+        .user-name
+          font-size: 16px
+
+        .user-status
+          font-size: 11px
+          margin-top: 0.5rem
+          color: #93a5b6
+
+      .main-chat-icons
+        width: 10%
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        color: #5e6e78
+        font-size: 1.1rem
+
+  // CHAT AREA
+  .chat-area
+    height: calc( 100% - 122px )
+    background-image: url(../img/background_whats.png)
+    background-repeat: repeat
+    opacity: 0.06
+
+  // INPUT MSG BAR
+  .input-msg-container
+    display: flex
+    align-items: center
+    justify-content: space-around
+    width: 100%
+    padding: 5px 17px 5px 10px
+    height: 62px
+    background-color: #f0f2f5
+    color: #54656f
+
+    .emoji-collapse-attach-file
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      padding: 5px 10px
+      cursor: pointer
+
+      .fa-face-laugh
+        margin-right: 8px
+        font-size: 1.5rem
+
+      .fa-paperclip
+        padding: 8px
+        font-size: 1.3rem
+
+    input
+      width: 880px
+      padding: 9px 12px 11px
+      margin: 5px 10px
+      line-height: 20px
+      background-color: #fff
+      border-radius: 8px
+      border: 1px solid #fff
+      &:focus, select:focus
+        box-shadow: 0 0 0 0
+        border: 0 none
+        outline: 0
+      &::-webkit-input-placeholder
+        line-height: 20px
+        color: linear-gradient(180deg,#b2d3e4, #7790a7)
+        font-size: .9rem
+        font-weight: 300
+
+    .fa-microphone
+      padding: 5px 10px
+      font-size: 1.3rem
+      cursor: pointer
