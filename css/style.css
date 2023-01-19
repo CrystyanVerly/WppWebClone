@@ -274,15 +274,13 @@ body {
   overflow-y: scroll;
   position: relative;
 }
-.right-content #id-chat-area::after {
+.right-content #id-chat-area::before {
+  content: "";
   background-image: url(../img/background_whats.png);
   opacity: 0.06;
   position: fixed;
-  content: "";
-  top: 78px;
-  right: 25px;
-  bottom: 80px;
-  left: 465px;
+  height: calc(100% - 122px);
+  width: 100%;
 }
 .right-content #id-chat-area .main-chat-content {
   display: flex;
