@@ -5,6 +5,17 @@
 html {
   font-family: "Open Sans", sans-serif;
 }
+html ::-webkit-scrollbar-track {
+  background-color: #fff;
+  opacity: 0;
+}
+html ::-webkit-scrollbar {
+  width: 6px;
+  background: #F4F4F4;
+}
+html ::-webkit-scrollbar-thumb {
+  background: #ced0d1;
+}
 
 body {
   display: flex;
@@ -149,16 +160,6 @@ body {
   margin: 0 auto;
   cursor: pointer;
 }
-.left-bar ::-webkit-scrollbar-track {
-  background-color: #fff;
-}
-.left-bar ::-webkit-scrollbar {
-  width: 6px;
-  background: #F4F4F4;
-}
-.left-bar ::-webkit-scrollbar-thumb {
-  background: #ced0d1;
-}
 .left-bar .section-chat {
   display: flex;
   flex-direction: column;
@@ -270,9 +271,56 @@ body {
 }
 .right-content .chat-area {
   height: calc(100% - 122px);
+  position: relative;
+  overflow-y: scroll;
+}
+.right-content .chat-area .background-img {
   background-image: url(../img/background_whats.png);
   background-repeat: repeat;
   opacity: 0.06;
+  width: 100%;
+  height: 100%;
+}
+.right-content .chat-area .main-chat-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  bottom: 0;
+  padding: 0 63px;
+  color: #111b21;
+  height: auto;
+  margin-bottom: 1rem;
+  position: absolute;
+}
+.right-content .chat-area .main-chat-content .msg-content-container {
+  display: flex;
+  padding: 6px 7px 4px 9px;
+  font-size: 14.2px;
+  border-radius: 7.5px;
+  margin: 1px 0;
+  box-shadow: 0 1px 0.5px rgba(11, 20, 16, 0.13);
+}
+.right-content .chat-area .main-chat-content .msg-content-container .div-blank-chat-time {
+  display: inline-block;
+}
+.right-content .chat-area .main-chat-content .msg-content-container .time-chat-content {
+  font-size: 0.6875rem;
+  text-align: right;
+  color: #667781;
+}
+.right-content .chat-area .main-chat-content .msg-content-container .msg-chat-content {
+  margin-right: 10px;
+}
+.right-content .chat-area .main-chat-content .out {
+  align-self: flex-end;
+  background-color: #d9fdd3;
+}
+.right-content .chat-area .main-chat-content .in {
+  align-self: flex-start;
+  background-color: #fff;
+}
+.right-content .chat-area .main-chat-content .msg-bottom {
+  margin-bottom: 12px;
 }
 .right-content .input-msg-container {
   display: flex;

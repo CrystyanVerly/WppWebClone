@@ -5,6 +5,17 @@
 
 html
   font-family: "Open Sans", sans-serif
+    // CHAT SCROLL BAR
+  ::-webkit-scrollbar-track
+    background-color: #fff
+    opacity: 0
+
+  ::-webkit-scrollbar
+    width: 6px
+    background: #F4F4F4
+
+  ::-webkit-scrollbar-thumb
+    background: #ced0d1
 
 body
   display: flex
@@ -139,17 +150,6 @@ body
     margin: 0 auto
     cursor: pointer
 
-  // CHAT SCROLL BAR
-  ::-webkit-scrollbar-track
-    background-color: #fff
-
-  ::-webkit-scrollbar
-    width: 6px
-    background: #F4F4F4
-
-  ::-webkit-scrollbar-thumb
-    background: #ced0d1
-
   // CHAT SESSION
   .section-chat
     display: flex
@@ -265,9 +265,61 @@ body
   // CHAT AREA
   .chat-area
     height: calc( 100% - 122px )
-    background-image: url(../img/background_whats.png)
-    background-repeat: repeat
-    opacity: 0.06
+    position: relative
+    overflow-y: scroll
+
+    .background-img
+      background-image: url(../img/background_whats.png)
+      background-repeat: repeat
+      opacity: 0.06
+      width: 100%
+      height: 100%
+
+    .main-chat-content
+      display: flex
+      flex-direction: column
+      width: 100%
+      bottom: 0
+      padding: 0 63px
+      color: #111b21
+      height: auto
+      margin-bottom: 1rem
+
+      position: absolute
+
+      .msg-content-container
+        display: flex
+        padding: 6px 7px 4px 9px
+        font-size: 14.2px
+        border-radius: 7.5px
+        margin: 1px 0
+        box-shadow: 0 1px .5px rgba(11,20,16,.13)
+
+        .div-blank-chat-time
+          display: inline-block
+
+        .time-chat-content
+          font-size: .6875rem
+          text-align: right
+          color: #667781
+
+        .msg-chat-content
+          margin-right: 10px
+
+      .out
+        align-self: flex-end
+        background-color: #d9fdd3
+
+      .in
+        align-self: flex-start
+        background-color: #fff
+
+      .msg-top
+
+      .msg-middle
+
+      .msg-bottom
+        margin-bottom: 12px
 
   // INPUT MSG BAR
   .input-msg-container
