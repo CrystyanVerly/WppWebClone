@@ -63,6 +63,7 @@ body
 .fa-angle-down
   display: none
   margin: 5px 0 0 5px
+  transition: padding-left .3s
 
 .fa-camera,
 .fa-video,
@@ -227,7 +228,6 @@ body
     align-items: center
     background-color: #f0f2f5
     padding: 10px 16px
-    height: 3.8rem
     border-left: 1px solid #d1d7db
     height: 60px
 
@@ -263,17 +263,21 @@ body
         font-size: 1.1rem
 
   // CHAT AREA
-  .chat-area
-    height: calc( 100% - 122px )
-    position: relative
-    overflow-y: scroll
 
-    .background-img
+  #id-chat-area
+    height: calc( 100% - 122px )
+    overflow-y: scroll
+    position: relative
+
+    &::after
       background-image: url(../img/background_whats.png)
-      background-repeat: repeat
       opacity: 0.06
-      width: 100%
-      height: 100%
+      position: fixed
+      content: ""
+      top: 78px
+      right: 25px
+      bottom: 80px
+      left: 465px
 
     .main-chat-content
       display: flex
@@ -284,8 +288,8 @@ body
       color: #111b21
       height: auto
       margin-bottom: 1rem
-
-      position: absolute
+      position: relative
+      z-index: 99
 
       .msg-content-container
         display: flex
@@ -303,6 +307,10 @@ body
           text-align: right
           color: #667781
 
+          i
+            padding: 0 0 0 .3rem
+            font-size: .8rem
+
         .msg-chat-content
           margin-right: 10px
 
@@ -313,10 +321,6 @@ body
       .in
         align-self: flex-start
         background-color: #fff
-
-      .msg-top
-
-      .msg-middle
 
       .msg-bottom
         margin-bottom: 12px
