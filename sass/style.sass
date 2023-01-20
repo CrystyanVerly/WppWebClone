@@ -214,6 +214,8 @@ body
                 text-align: center
                 color: #fbfefc
                 font-size: 13px
+    #chat-selected
+      background: #f0f2f5
 
 // MAIN SESSION
 
@@ -264,18 +266,18 @@ body
 
   // CHAT AREA
 
+  #id-chat-area::before
+    content: ""
+    background-image: url(../img/background_whats.png)
+    opacity: 0.06
+    position: fixed
+    height: 78%
+    width: 67.5%
+
   #id-chat-area
     height: calc( 100% - 122px )
     overflow-y: scroll
     position: relative
-
-    &::before
-      content: ""
-      background-image: url(../img/background_whats.png)
-      opacity: 0.06
-      position: fixed
-      height: calc( 100% - 122px )
-      width: 100%
 
     .main-chat-content
       display: flex

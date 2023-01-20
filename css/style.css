@@ -225,6 +225,9 @@ body {
   color: #fbfefc;
   font-size: 13px;
 }
+.left-bar .section-chat #chat-selected {
+  background: #f0f2f5;
+}
 
 .right-content {
   width: 70%;
@@ -269,18 +272,18 @@ body {
   color: #5e6e78;
   font-size: 1.1rem;
 }
-.right-content #id-chat-area {
-  height: calc(100% - 122px);
-  overflow-y: scroll;
-  position: relative;
-}
 .right-content #id-chat-area::before {
   content: "";
   background-image: url(../img/background_whats.png);
   opacity: 0.06;
   position: fixed;
+  height: 78%;
+  width: 67.5%;
+}
+.right-content #id-chat-area {
   height: calc(100% - 122px);
-  width: 100%;
+  overflow-y: scroll;
+  position: relative;
 }
 .right-content #id-chat-area .main-chat-content {
   display: flex;
